@@ -1,4 +1,4 @@
-package com.tests;
+package lab_ssvv_tests;
 
 import org.junit.Test;
 
@@ -10,7 +10,7 @@ public class PlaceholderTest {
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue() {
+    public void shouldAnswerWithTrueTest() {
         assertTrue(true);
     }
 }

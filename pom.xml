@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ssvv.example</groupId>
-    <artifactId>lab_ssvv_MaCoMo</artifactId>
+    <artifactId>lab_ssvv_tests</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Tests</name>
+    <name>lab_ssvv_tests</name>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
