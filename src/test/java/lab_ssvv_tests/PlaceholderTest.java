@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertTrue;
 
 
-public class PlaceholderTest {
+    public class PlaceholderTest {
     /**
      * Rigorous Test :-)
      */
