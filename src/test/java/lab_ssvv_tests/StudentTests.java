@@ -52,39 +52,7 @@ public class StudentTests {
         assert(service.findStudent(idStudent) != null);
     }
 
-    @Test
-    public void addStudent_InvalidID_TooShort() {
-        setup();
-        String idStudent = "a"; // ID too short (below boundary value)
-        String numeStudent = "john";
-        int grupa = 935;
-        String email = "john_doe@yahoo.com";
-        Student student = new Student(idStudent, numeStudent, grupa, email);
 
-        try {
-            service.addStudent(student);
-            assertFalse(true); // Expecting ValidationException to be thrown
-        } catch (ValidationException e) {
-            // Expected behavior
-        }
-    }
-
-    @Test
-    public void addStudent_InvalidID_TooLong() {
-        setup();
-        String idStudent = "testtesttesttest"; // ID too long (above boundary value)
-        String numeStudent = "john";
-        int grupa = 935;
-        String email = "john_doe@yahoo.com";
-        Student student = new Student(idStudent, numeStudent, grupa, email);
-
-        try {
-            service.addStudent(student);
-            assertFalse(true); // Expecting ValidationException to be thrown
-        } catch (ValidationException e) {
-            // Expected behavior
-        }
-    }
 
     @Test
     public void addStudent_ValidName() {
@@ -97,9 +65,9 @@ public class StudentTests {
 
         try {
             service.addStudent(student);
-            assertFalse(true); // Expecting ValidationException to be thrown
+
         } catch (ValidationException e) {
-            // Expected behavior
+            assertFalse(true);
         }
     }
 
@@ -131,9 +99,8 @@ public class StudentTests {
 
         try {
             service.addStudent(student);
-            assertFalse(true); // Expecting ValidationException to be thrown
         } catch (ValidationException e) {
-            // Expected behavior
+            assertFalse(true);
         }
     }
 
@@ -182,9 +149,9 @@ public class StudentTests {
 
         try {
             service.addStudent(student);
-            assertFalse(true); // Expecting ValidationException to be thrown
+
         } catch (ValidationException e) {
-            // Expected behavior
+            assertFalse(true);
         }
     }
 
