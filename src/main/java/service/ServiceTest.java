@@ -1,18 +1,18 @@
 package service;
 
-import domain.Student;
-import org.junit.jupiter.api.BeforeEach;
-import repository.NotaXMLRepo;
-import repository.StudentXMLRepo;
-import repository.TemaXMLRepo;
-import validation.NotaValidator;
-import validation.StudentValidator;
-import validation.TemaValidator;
-import validation.ValidationException;
-
-import java.util.stream.StreamSupport;
-
-import static org.junit.jupiter.api.Assertions.*;
+//import domain.Student;
+//import org.junit.jupiter.api.BeforeEach;
+//import repository.NotaXMLRepo;
+//import repository.StudentXMLRepo;
+//import repository.TemaXMLRepo;
+//import validation.NotaValidator;
+//import validation.StudentValidator;
+//import validation.TemaValidator;
+//import validation.ValidationException;
+//
+//import java.util.stream.StreamSupport;
+//
+//import static org.junit.jupiter.api.Assertions.*;
 
 class ServiceTest {
 
