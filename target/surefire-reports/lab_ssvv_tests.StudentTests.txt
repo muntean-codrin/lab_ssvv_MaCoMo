@@ -1,4 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: lab_ssvv_tests.StudentTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 s - in lab_ssvv_tests.StudentTests
+Tests run: 11, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.244 s <<< FAILURE! - in lab_ssvv_tests.StudentTests
+addStudent_InvalidID_TooShort(lab_ssvv_tests.StudentTests)  Time elapsed: 0.17 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidID_TooShort(StudentTests.java:66)
+
+addStudent_InvalidGroup_TooLow(lab_ssvv_tests.StudentTests)  Time elapsed: 0.009 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidGroup_TooLow(StudentTests.java:151)
+
+addStudent_ValidEmail(lab_ssvv_tests.StudentTests)  Time elapsed: 0.008 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_ValidEmail(StudentTests.java:185)
+
+addStudent_ValidGroup(lab_ssvv_tests.StudentTests)  Time elapsed: 0.007 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_ValidGroup(StudentTests.java:134)
+
+addStudent_InvalidGroup_TooHigh(lab_ssvv_tests.StudentTests)  Time elapsed: 0.007 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidGroup_TooHigh(StudentTests.java:168)
+
+addStudent_InvalidID_TooLong(lab_ssvv_tests.StudentTests)  Time elapsed: 0.009 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidID_TooLong(StudentTests.java:83)
+
+addStudent_ValidName(lab_ssvv_tests.StudentTests)  Time elapsed: 0.007 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_ValidName(StudentTests.java:100)
+
+addStudent_InvalidEmail_MissingAtSymbol(lab_ssvv_tests.StudentTests)  Time elapsed: 0.006 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidEmail_MissingAtSymbol(StudentTests.java:202)
+
+addStudent_InvalidEmail_InvalidDomain(lab_ssvv_tests.StudentTests)  Time elapsed: 0.007 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidEmail_InvalidDomain(StudentTests.java:219)
+

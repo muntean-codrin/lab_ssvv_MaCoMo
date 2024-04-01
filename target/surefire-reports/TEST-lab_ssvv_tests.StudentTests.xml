@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="lab_ssvv_tests.StudentTests" time="0.217" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="lab_ssvv_tests.StudentTests" time="0.244" tests="11" errors="0" skipped="0" failures="9">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\codri\AppData\Local\Temp\surefire14252243319044797985\surefirebooter11144072688251801099.jar C:\Users\codri\AppData\Local\Temp\surefire14252243319044797985 2024-04-01T14-14-01_250-jvmRun1 surefire16607412221566656204tmp surefire_08889302680698917831tmp"/>
+    <property name="sun.java.command" value="C:\Users\codri\AppData\Local\Temp\surefire7491795867202468582\surefirebooter5383305229375448554.jar C:\Users\codri\AppData\Local\Temp\surefire7491795867202468582 2024-04-01T14-30-50_653-jvmRun1 surefire8553900225023963553tmp surefire_04829860410892952247tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\codri\source\repos\lab_ssvv_MaCoMo\target\test-classes;C:\Users\codri\source\repos\lab_ssvv_MaCoMo\target\classes;C:\Users\codri\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\codri\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\codri\AppData\Local\Temp\surefire14252243319044797985\surefirebooter11144072688251801099.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\codri\AppData\Local\Temp\surefire7491795867202468582\surefirebooter5383305229375448554.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19+36-2238"/>
@@ -59,9 +59,51 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="addStudent_EmptyId_ThrowError" classname="lab_ssvv_tests.StudentTests" time="0.077"/>
-  <testcase name="addStudent_NullGroup_ThrowError" classname="lab_ssvv_tests.StudentTests" time="0.007"/>
-  <testcase name="addStudent_NullId_ThrowError" classname="lab_ssvv_tests.StudentTests" time="0.007"/>
-  <testcase name="addStudent_DuplicateId_ThrowError" classname="lab_ssvv_tests.StudentTests" time="0.117"/>
-  <testcase name="addStudent_ValidData_CreatedSuccessfully" classname="lab_ssvv_tests.StudentTests" time="0.008"/>
+  <testcase name="addStudent_InvalidID_TooShort" classname="lab_ssvv_tests.StudentTests" time="0.17">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidID_TooShort(StudentTests.java:66)
+</failure>
+  </testcase>
+  <testcase name="addStudent_InvalidName_Empty" classname="lab_ssvv_tests.StudentTests" time="0.007"/>
+  <testcase name="addStudent_InvalidGroup_TooLow" classname="lab_ssvv_tests.StudentTests" time="0.009">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidGroup_TooLow(StudentTests.java:151)
+</failure>
+  </testcase>
+  <testcase name="addStudent_ValidEmail" classname="lab_ssvv_tests.StudentTests" time="0.008">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_ValidEmail(StudentTests.java:185)
+</failure>
+  </testcase>
+  <testcase name="addStudent_ValidGroup" classname="lab_ssvv_tests.StudentTests" time="0.007">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_ValidGroup(StudentTests.java:134)
+</failure>
+  </testcase>
+  <testcase name="addStudent_InvalidGroup_TooHigh" classname="lab_ssvv_tests.StudentTests" time="0.007">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidGroup_TooHigh(StudentTests.java:168)
+</failure>
+  </testcase>
+  <testcase name="addStudent_InvalidID_TooLong" classname="lab_ssvv_tests.StudentTests" time="0.009">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidID_TooLong(StudentTests.java:83)
+</failure>
+  </testcase>
+  <testcase name="addStudent_ValidName" classname="lab_ssvv_tests.StudentTests" time="0.007">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_ValidName(StudentTests.java:100)
+</failure>
+  </testcase>
+  <testcase name="addStudent_InvalidEmail_MissingAtSymbol" classname="lab_ssvv_tests.StudentTests" time="0.006">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidEmail_MissingAtSymbol(StudentTests.java:202)
+</failure>
+  </testcase>
+  <testcase name="addStudent_ValidData_CreatedSuccessfully" classname="lab_ssvv_tests.StudentTests" time="0.006"/>
+  <testcase name="addStudent_InvalidEmail_InvalidDomain" classname="lab_ssvv_tests.StudentTests" time="0.007">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at lab_ssvv_tests.StudentTests.addStudent_InvalidEmail_InvalidDomain(StudentTests.java:219)
+</failure>
+  </testcase>
 </testsuite>
