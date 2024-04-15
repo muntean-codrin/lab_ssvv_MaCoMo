@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ac46a2-14eb-43e3-acbb-29253c54d2fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab_ssvv_tests/TemaTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab_ssvv_tests/GradeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fisiere/Teme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/Teme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lab_ssvv_tests/TemaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab_ssvv_tests/TemaTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-lab_ssvv_tests.PlaceholderTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-lab_ssvv_tests.PlaceholderTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-lab_ssvv_tests.StudentTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-lab_ssvv_tests.StudentTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-lab_ssvv_tests.TemaTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-lab_ssvv_tests.TemaTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/lab_ssvv_tests.PlaceholderTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/lab_ssvv_tests.PlaceholderTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/lab_ssvv_tests.StudentTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/lab_ssvv_tests.StudentTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/lab_ssvv_tests.TemaTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/lab_ssvv_tests.TemaTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lab_ssvv_tests/TemaTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lab_ssvv_tests/TemaTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1711955092131</updated>
       <workItem from="1711955093526" duration="838000" />
-      <workItem from="1711969620952" duration="3707000" />
+      <workItem from="1711969620952" duration="4671000" />
+      <workItem from="1713179129349" duration="1624000" />
     </task>
     <servers />
   </component>

@@ -13,6 +13,7 @@ import validation.TemaValidator;
 import validation.ValidationException;
 
 import static junit.framework.TestCase.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class TemaTests {
     Service service;
@@ -73,4 +74,77 @@ public class TemaTests {
         assert(service.findTema(nrTema) != null);
 
     }
+
+    @Test
+    public void addTema_InvalidDeadline() {
+        setup();
+
+        String nrTema = "26";
+        String descriere = "descriere";
+        int deadline = -1; // Invalid deadline
+        int primire = 5;
+
+        Tema tema = new Tema(nrTema, descriere, deadline, primire);
+
+        try {
+            service.addTema(tema);
+            assertFalse(true);
+        } catch (ValidationException exception) {
+        }
+    }
+
+    @Test
+    public void addTema_InvalidPrimireDate() {
+        setup();
+
+        String nrTema = "27";
+        String descriere = "descriere";
+        int deadline = 8;
+        int primire = 20; // Invalid primire date
+
+        Tema tema = new Tema(nrTema, descriere, deadline, primire);
+
+        try {
+            service.addTema(tema);
+            assertFalse(true);
+        } catch (ValidationException exception) {
+        }
+    }
+
+    @Test
+    public void addTema_InvalidNrTema() {
+        setup();
+
+        String nrTema = ""; // Invalid nrTema
+        String descriere = "descriere";
+        int deadline = 8;
+        int primire = 5;
+
+        Tema tema = new Tema(nrTema, descriere, deadline, primire);
+
+        try {
+            service.addTema(tema);
+            assertFalse(true);
+        } catch (ValidationException exception) {
+        }
+    }
+
+    @Test
+    public void addTema_InvalidPrimireDate_UpperBound() {
+        setup();
+
+        String nrTema = "29";
+        String descriere = "descriere";
+        int deadline = 8;
+        int primire = 15; // Above upper bound
+
+        Tema tema = new Tema(nrTema, descriere, deadline, primire);
+
+        try {
+            service.addTema(tema);
+            assertFalse(true);
+        } catch (ValidationException exception) {
+        }
+    }
+
 }
